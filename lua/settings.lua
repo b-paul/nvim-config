@@ -26,3 +26,9 @@ vim.filetype.add({
         typ = 'typst',
     },
 })
+-- add dafny, it wasn't there by default
+vim.filetype.add({
+    extension = {
+        dfy = 'dafny',
+    },
+})
