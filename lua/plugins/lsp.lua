@@ -6,4 +6,12 @@ return function()
             on_attach = bindings
         },
     })
+
+    require("lspconfig").typst_lsp.setup({
+        on_attach = bindings
+    })
+
+    require("lspconfig").dafny.setup({
+        on_attach = bindings
+    })
 end
