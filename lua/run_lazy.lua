@@ -15,7 +15,10 @@ require("lazy").setup({
 	{
 		"neovim/nvim-lspconfig",
 		config = require("plugins/lsp"),
-        dependencies = "simrat39/rust-tools.nvim",
+        dependencies = {
+            "simrat39/rust-tools.nvim",
+            "MrcJkb/haskell-tools.nvim",
+        },
 	},
     {
         "hrsh7th/nvim-cmp",

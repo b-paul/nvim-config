@@ -7,6 +7,12 @@ return function()
         },
     })
 
+    vim.g.haskell_tools = {
+        hls = {
+            on_attach = bindings
+        },
+    }
+
     require("lspconfig").typst_lsp.setup({
         on_attach = bindings
     })
