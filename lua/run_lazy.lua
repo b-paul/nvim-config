@@ -67,4 +67,8 @@ require("lazy").setup({
             vim.cmd("colorscheme tokyodark")
         end,
     },
+
+    {
+        "lervag/vimtex",
+    },
 })

@@ -20,4 +20,8 @@ return function()
     require("lspconfig").dafny.setup({
         on_attach = bindings
     })
+
+    require("lspconfig").texlab.setup({
+        on_attach = bindings
+    })
 end

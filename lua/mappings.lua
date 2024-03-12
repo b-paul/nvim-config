@@ -5,6 +5,7 @@ local opts = { silent = true }
 M.general = function()
 
     vim.g.mapleader = ' '
+    vim.g.localleader = '\\'
 
     vim.keymap.set("n", "<C-L>", ":noh<CR>:mode<CR>", opts)
     vim.keymap.set("n", "<leader>a", "$i", opts)
