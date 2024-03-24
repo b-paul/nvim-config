@@ -41,7 +41,7 @@ require("lazy").setup({
     },
     {
         "nvim-treesitter/nvim-treesitter",
-        build = ":TSInstall",
+        build = ":TSUpdate",
         config = require("plugins/treesitter"),
     },
 
@@ -70,5 +70,9 @@ require("lazy").setup({
 
     {
         "lervag/vimtex",
+        ft = "tex",
+        init = function()
+            vim.g.vimtex_view_method = 'zathura'
+        end
     },
 })
