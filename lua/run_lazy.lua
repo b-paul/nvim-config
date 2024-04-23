@@ -75,4 +75,42 @@ require("lazy").setup({
             vim.g.vimtex_view_method = 'zathura'
         end
     },
+
+    {
+        'isovector/cornelis',
+        build = 'stack build',
+        init = function()
+            vim.g.cornelis_use_global_binary = 1
+        end,
+        config = require('mappings').agda,
+        dependencies = {
+            'kana/vim-textobj-user',
+            'neovimhaskell/nvim-hs.vim',
+            'liuchengxu/vim-which-key',
+        },
+    },
+
+    {
+        'scalameta/nvim-metals',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+        },
+        ft = { 'scala', 'sbt', 'java' },
+        opts = function()
+            local metals_config = require('metals').bare_config()
+            metals_config.on_attach = require('mappings').on_attach
+
+            return metals_config
+        end,
+        config = function(self, metals_config)
+            local nvim_metals_group = vim.api.nvim_create_augroup('nvim-metals', { clear = true })
+            vim.api.nvim_create_autocmd('FileType', {
+                pattern = self.ft,
+                callback = function()
+                    require('metals').initialize_or_attach(metals_config)
+                end,
+                group = nvim_metals_group,
+            })
+        end
+    },
 })

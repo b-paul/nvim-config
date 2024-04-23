@@ -36,4 +36,8 @@ M.telescope = function()
     vim.keymap.set("n", "<leader>G", builtin.live_grep, opts)
 end
 
+M.agda = function()
+    vim.keymap.set("n", "<localleader>l", ":CornelisLoad<CR>", opts)
+end
+
 return M

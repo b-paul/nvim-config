@@ -24,4 +24,8 @@ return function()
     require("lspconfig").texlab.setup({
         on_attach = bindings
     })
+
+    require("lspconfig").metals.setup({
+        on_attach = bindings
+    })
 end
