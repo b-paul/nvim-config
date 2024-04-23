@@ -40,4 +40,8 @@ M.agda = function()
     vim.keymap.set("n", "<localleader>l", ":CornelisLoad<CR>", opts)
 end
 
+M.nvim_tree = function()
+    vim.keymap.set("n", "<leader>T", require('nvim-tree.api').tree.open, opts)
+end
+
 return M
