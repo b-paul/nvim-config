@@ -38,6 +38,10 @@ end
 
 M.agda = function()
     vim.keymap.set("n", "<localleader>l", ":CornelisLoad<CR>", opts)
+    vim.keymap.set("n", "<localleader>c", ":CornelisMakeCase<CR>", opts)
+    vim.keymap.set("n", "<localleader>q", ":CornelisQuestionToMeta<CR>", opts)
+    vim.keymap.set("n", "<localleader>r", ":CornelisRefine<CR>", opts)
+    vim.keymap.set("n", "<localleader><localleade>r", ":CornelisRestart<CR>", opts)
 end
 
 M.nvim_tree = function()
