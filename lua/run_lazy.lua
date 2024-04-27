@@ -77,20 +77,6 @@ require("lazy").setup({
     },
 
     {
-        'isovector/cornelis',
-        build = 'stack build',
-        init = function()
-            vim.g.cornelis_use_global_binary = 1
-        end,
-        config = require('mappings').agda,
-        dependencies = {
-            'kana/vim-textobj-user',
-            'neovimhaskell/nvim-hs.vim',
-            'liuchengxu/vim-which-key',
-        },
-    },
-
-    {
         'scalameta/nvim-metals',
         dependencies = {
             'nvim-lua/plenary.nvim',

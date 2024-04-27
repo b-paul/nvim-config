@@ -36,14 +36,6 @@ M.telescope = function()
     vim.keymap.set("n", "<leader>G", builtin.live_grep, opts)
 end
 
-M.agda = function()
-    vim.keymap.set("n", "<localleader>l", ":CornelisLoad<CR>", opts)
-    vim.keymap.set("n", "<localleader>c", ":CornelisMakeCase<CR>", opts)
-    vim.keymap.set("n", "<localleader>q", ":CornelisQuestionToMeta<CR>", opts)
-    vim.keymap.set("n", "<localleader>r", ":CornelisRefine<CR>", opts)
-    vim.keymap.set("n", "<localleader><localleader>r", ":CornelisRestart<CR>", opts)
-end
-
 M.nvim_tree = function()
     vim.keymap.set("n", "<leader>T", require('nvim-tree.api').tree.open, opts)
 end
