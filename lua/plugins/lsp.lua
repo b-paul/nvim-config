@@ -18,7 +18,8 @@ return function()
     })
 
     require("lspconfig").dafny.setup({
-        on_attach = bindings
+        on_attach = bindings,
+        cmd = {"dafny", "server", "--verify-on", "Save"},
     })
 
     require("lspconfig").texlab.setup({
