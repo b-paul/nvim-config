@@ -13,7 +13,7 @@ return function()
         },
     }
 
-    require("lspconfig").typst_lsp.setup({
+    require("lspconfig").tinymist.setup({
         on_attach = bindings
     })
 
