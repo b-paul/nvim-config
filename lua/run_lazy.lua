@@ -76,6 +76,7 @@ require("lazy").setup({
         end
     },
 
+    --[[
     {
         'scalameta/nvim-metals',
         dependencies = {
@@ -99,9 +100,12 @@ require("lazy").setup({
             })
         end
     },
+    ]]--
 
     {
         'nvim-tree/nvim-tree.lua',
 		config = require("plugins/nvim-tree"),
     },
+
+    'tpope/vim-fugitive',
 })

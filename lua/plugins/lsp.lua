@@ -26,7 +26,24 @@ return function()
         on_attach = bindings
     })
 
+    --[[
     require("lspconfig").metals.setup({
+        on_attach = bindings
+    })
+    ]]--
+
+    vim.lsp.enable("jedi_language_server")
+    vim.lsp.config("jedi_language_server", {
+        on_attach = bindings
+    })
+
+    vim.lsp.enable("ruff")
+    vim.lsp.config("ruff", {
+        on_attach = bindings
+    })
+
+    vim.lsp.enable("ty")
+    vim.lsp.config("ty", {
         on_attach = bindings
     })
 end
