@@ -1,11 +1,11 @@
 local bindings = require("mappings").lsp
 
 return function()
-    require("rust-tools").setup({
+    vim.g.rustaceanvim = {
         server = {
             on_attach = bindings
         },
-    })
+    }
 
     vim.g.haskell_tools = {
         hls = {
