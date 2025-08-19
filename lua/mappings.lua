@@ -30,4 +30,12 @@ M.nvim_tree = function()
     vim.keymap.set("n", "<leader>T", require('nvim-tree.api').tree.open, opts)
 end
 
+M.neogit = function()
+    vim.keymap.set("n", "<leader><leader>N", require('neogit').open, opts)
+end
+
+M.gitsigns = function()
+    vim.keymap.set("n", "<leader>hp", require('gitsigns').preview_hunk, opts)
+end
+
 return M
