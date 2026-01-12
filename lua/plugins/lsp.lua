@@ -15,6 +15,7 @@ return {
             vim.lsp.enable("jedi_language_server")
             vim.lsp.enable("ruff")
             vim.lsp.enable("ty")
+            vim.lsp.enable("ocamllsp")
 
             -- for some reason this doesn't work?!
             --[[
