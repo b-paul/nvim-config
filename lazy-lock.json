@@ -12,12 +12,14 @@
   "nvim-lspconfig": { "branch": "master", "commit": "8a9378a822719346a0288fa004dab302ca3c0a8f" },
   "nvim-surround": { "branch": "main", "commit": "9291040de8cd8a4439eb64c441e8d5d2bf884a5a" },
   "nvim-tree.lua": { "branch": "master", "commit": "509962f21ab7289d8dcd28568af539be39a8c01e" },
-  "nvim-treesitter": { "branch": "master", "commit": "cf12346a3414fa1b06af75c79faebe7f76df080a" },
+  "nvim-treesitter": { "branch": "main", "commit": "4916d6592ede8c07973490d9322f187e07dfefac" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
   "rustaceanvim": { "branch": "master", "commit": "eb9beab7d80eb052f78165b28d18f55844b26aef" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "3ab376cfae65b921dda454df5967f8df673effc6" },
+  "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "tokyodark.nvim": { "branch": "master", "commit": "659aff3c73dc2e0159314050a81671f0b2eaad01" },
+  "treesitter-autoinstall.nvim": { "branch": "main", "commit": "b60bd6b84ec9bd3ce6447e51bff6ffc6142f60b7" },
   "vim-fugitive": { "branch": "master", "commit": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0" },
   "vimtex": { "branch": "master", "commit": "9306903316c3ddd250676b7cf97c84a84c9c8f99" }
 }
