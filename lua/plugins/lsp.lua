@@ -23,6 +23,11 @@ return {
                 on_attach = bindings
             })
             ]]--
+            vim.lsp.config("tinymist", {
+                settings = {
+                    exportPdf = "onSave"
+                }
+            })
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = bindings
