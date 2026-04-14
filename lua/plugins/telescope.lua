@@ -10,7 +10,7 @@ return {
             require("telescope").setup({
                 extensions = {
                     ["ui-select"] = {
-                        require("telescope.themes").get_dropdown({}) -- idk what this is ahdbmuwighmbw
+                        require("telescope.themes").get_dropdown({})
                     }
                 }
             })

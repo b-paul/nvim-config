@@ -7,6 +7,7 @@ return {
         },
         build = ":TSUpdate",
         config = function()
+            require("nvim-treesitter").install({ "comment" })
             require("treesitter-autoinstall").setup({
                 highlight = true,
             })
